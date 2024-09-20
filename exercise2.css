@@ -1,63 +1,81 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url("Roboto/Roboto-Regular.ttf"),url("Roboto/Roboto-Regular.woff2");
+}
+:root {
+    --colorPrincipal: hsl(238, 96%, 11%);
+    --colorSecundario: hsl(230, 30%, 26%);
+    --colorFondo: hsl(0, 0%, 100%);
+
+    --colorTexto: hsl(0, 0%, 100%);
+    --colorTexto1: hsl(0, 0%, 33%);
+    --colorTexto2: hsl(0, 0%, 35%);
+
+    --tipografiaPrincipal: 'Cormorant Garamond';
+    --tipografiaSecundaria: 'Roboto';
+}
 body {
-    background-color: white;
+    background-color:var(--colorFondo);
     color: #000000;
+    font-family: var(--tipografiaSecundaria);
 }
 
 header {
-    /* background-color:hsl(238, 96%, 11%); */
-    background-color: hsl(249, 100%, 21%);
+    background-color:var(--colorPrincipal);
     text-align:center;
     padding: 1px;    
 }
 
 h1 {
-    font-family: 'Roboto Condense', sans-serif;
-    font-size: 70px;
+    font-family: var(--tipografiaPrincipal);
+    font-size: 60px;
     color: white;
 }
 
 nav ul {
     list-style-type: none;
     padding: 10px;
-    background-color: hsl(238, 30%, 21%);
+    background-color: var(--colorSecundario);
     display: flex;
     justify-content: space-around;
 }
 
 nav ul li a{
     text-decoration: none;
-    color: white;
+    color: var(--colorTexto);
     font-size: 20px;
 
 }
 
 section {
     margin: 30px;
-    background-color: #e9dede49;
+    background-color: var(--colorFondo);
     border-radius: 25px;
-    border: 5px inset #e9deded5;
-    box-shadow: 10px 10px hsl(238, 30%, 21%);
+    border: 3px inset;
+    box-shadow: 10px 10px var(--colorSecundario);
     display: block;
     justify-items:center;
     padding: 10px;
 }
 
 section h2 {
-    font-family: 'Roboto Condense', sans-serif;
+    font-family: var(--tipografiaPrincipal);
     font-size: 25px;
-    color: #555555;
+    color: var(--colorTexto1);
 }
 
 section p {
     font-size: 18px;
-    color: #7c7b7b;
+    color: var(--colorTexto2);
 }
 
 footer {
-    background-color: #e9dedee5;
+    background-color:var(--colorSecundario);
+    color: var(--colorTexto);
+    font-size: 15px;
     text-align: center;
-    padding: 1px;
     margin-top: 30px;
+    padding: 1px;
 
 }
 
