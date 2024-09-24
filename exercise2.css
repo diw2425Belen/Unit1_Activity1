@@ -18,6 +18,9 @@ body {
     background-color:var(--colorFondo);
     color: #000000;
     font-family: var(--tipografiaSecundaria);
+    display: flex;  
+    flex-direction: column;
+    height: 100vh;
 }
 
 header {
@@ -48,6 +51,7 @@ nav ul li a{
 
 main {
     display: flex;  
+    flex-grow: 1;
 }
 
 @media (400px <= width <= 800px) {
@@ -63,6 +67,7 @@ section {
     border: 3px inset;
     box-shadow: 10px 10px var(--colorSecundario);
     padding: 10px;
+    height: fit-content;
 }
 
 section h2 {
@@ -83,8 +88,6 @@ footer {
     text-align: center;
     margin-top: 30px;
     padding: 1px;
-    position: fixed;
-    width: 100%;
-    bottom: 0; 
+
 }
 
